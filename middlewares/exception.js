@@ -5,6 +5,8 @@ const catchError = async (ctx, next) => {
         await next()
 
     } catch (error) {
+        // 开发环境
+        // 生成环境
         if (error instanceof HttpException) {
             ctx.body = {
                 msg: error.msg,
