@@ -6,6 +6,10 @@ const catchError = async (ctx, next) => {
 
     } catch (error) {
         // 开发环境
+        if (global.config.environment === 'dev') {
+            throw error
+        }
+
         // 生成环境
         if (error instanceof HttpException) {
             ctx.body = {
