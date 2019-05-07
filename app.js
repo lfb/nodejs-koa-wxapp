@@ -1,10 +1,19 @@
 const Koa = require('koa')
-const book = require('./api/v1/book')
-const classic = require('./api/v1/classic')
+const Router = require('koa-router')
+const requireDirectory = require('require-directory')
 
 const app = new Koa()
 
-app.use(book.routes())
-app.use(classic.routes())
+// 路由自动加载
+requireDirectory(module, './api', {
+    visit: whenLoadModule
+})
+
+// 判断 requireDirectory 加载的模块是否为路由
+function whenLoadModule(obj) {
+    if (obj instanceof Router) {
+        app.use(obj.routes())
+    }
+}
 
 app.listen(3000)
