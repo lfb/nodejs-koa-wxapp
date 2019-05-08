@@ -11,7 +11,26 @@
 ## Koa安装
 
 ```
+# 安装
 npm intall koa
+
+# 核心依赖
+"dependencies": {
+  "axios": "^0.18.0",
+  "basic-auth": "^2.0.1",
+  "bcryptjs": "^2.4.3",
+  "jsonwebtoken": "^8.4.0",
+  "koa": "^2.7.0",
+  "koa-bodyparser": "^4.2.1",
+  "koa-router": "^7.4.0",
+  "koa-static": "^5.0.0",
+  "lodash": "^4.17.11",
+  "mysql2": "^1.6.5",
+  "npm-check": "^5.9.0",
+  "require-directory": "^2.1.1",
+  "sequelize": "^5.6.1",
+  "validator": "^10.11.0"
+},
 ```
 
 ## Koa启动

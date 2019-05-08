@@ -8,7 +8,7 @@ Node.js Koa2 实战开发微信小程序服务端API接口。
 $ mysql -uroot -p密码
 
 # 创建 wxapp 数据库
-CREATE DATABASE IF NOT EXISTS wxapp DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+$ CREATE DATABASE IF NOT EXISTS wxapp DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
 ## 项目使用
