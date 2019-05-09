@@ -1,11 +1,16 @@
 ## 项目介绍
-![koa](https://img.shields.io/badge/koa-%5E2.7.0-brightgreen.svg) 
-![koa-router](https://img.shields.io/badge/koa--router-%5E7.4.0-brightgreen.svg)
-![require-directory](https://img.shields.io/badge/require--directory-%5E2.1.1-brightgreen.svg)
-![koa-bodyparser](https://img.shields.io/badge/koa--bodyparser-%5E4.2.1-brightgreen.svg) 
-![sequelize](https://img.shields.io/badge/sequelize-%5E5.6.1-brightgreen.svg)
-![mysql2](https://img.shields.io/badge/mysql2-%5E1.6.5-brightgreen.svg)
+<div style="text-align:center">
 
+[![koa](https://img.shields.io/badge/koa-%5E2.7.0-brightgreen.svg) ](https://www.npmjs.com/package/koa)
+[![koa-router](https://img.shields.io/badge/koa--router-%5E7.4.0-brightgreen.svg)](https://www.npmjs.com/package/koa-router)
+[![require-directory](https://img.shields.io/badge/require--directory-%5E2.1.1-brightgreen.svg)](https://www.npmjs.com/package/require--directoryr)
+[![koa--bodyparser](https://img.shields.io/badge/koa--bodyparser-%5E4.2.1-brightgreen.svg)](https://www.npmjs.com/package/koa--bodyparser) 
+[![sequelize](https://img.shields.io/badge/sequelize-%5E5.6.1-brightgreen.svg)](https://www.npmjs.com/package/sequelize)
+[![mysql2](https://img.shields.io/badge/mysql2-%5E1.6.5-brightgreen.svg)](https://www.npmjs.com/package/mysql2)
+[![validator](https://img.shields.io/badge/validator-%5E10.11.0-brightgreen.svg)](https://www.npmjs.com/package/validator)
+[![lodash](https://img.shields.io/badge/lodash-%5E4.17.11-brightgreen.svg)](https://www.npmjs.com/package/lodash)
+
+</div>
 Node.js Koa2 实战开发微信小程序服务端API接口。
 
 ## 数据库
