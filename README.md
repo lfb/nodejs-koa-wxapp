@@ -3,7 +3,7 @@
 
 [![koa](https://img.shields.io/badge/koa-%5E2.7.0-brightgreen.svg) ](https://www.npmjs.com/package/koa)
 [![koa-router](https://img.shields.io/badge/koa--router-%5E7.4.0-brightgreen.svg)](https://www.npmjs.com/package/koa-router)
-[![require-directory](https://img.shields.io/badge/require--directory-%5E2.1.1-brightgreen.svg)](https://www.npmjs.com/package/require--directoryr)
+[![require-directory](https://img.shields.io/badge/require--directory-%5E2.1.1-brightgreen.svg)](https://www.npmjs.com/package/require--directory)
 [![koa--bodyparser](https://img.shields.io/badge/koa--bodyparser-%5E4.2.1-brightgreen.svg)](https://www.npmjs.com/package/koa--bodyparser) 
 [![sequelize](https://img.shields.io/badge/sequelize-%5E5.6.1-brightgreen.svg)](https://www.npmjs.com/package/sequelize)
 [![mysql2](https://img.shields.io/badge/mysql2-%5E1.6.5-brightgreen.svg)](https://www.npmjs.com/package/mysql2)
