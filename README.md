@@ -56,7 +56,5 @@ Koa服务端编程、异步编程、面向对象编程。
 
 - [x] [正在开发中，敬请期待..](###)
 
-## License
-[MIT](https://github.com/liangfengbo/nodejs-koa-wxapp/blob/master/LICENSE)
-
-Copyright (c) 2019 - present, Fengbo Liang
+## 项目来源与正版教程
+[慕课网7七月老师：纯正商业级应用－Node.js Koa2开发微信小程序服务端](https://s.imooc.com/SHHXs2R)
