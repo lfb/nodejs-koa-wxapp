@@ -1,12 +1,9 @@
 ## 项目介绍
-<div style="text-align:center">
-
 [![koa](https://img.shields.io/badge/koa-%5E2.7.0-brightgreen.svg) ](https://www.npmjs.com/package/koa)
 [![koa-router](https://img.shields.io/badge/koa--router-%5E7.4.0-brightgreen.svg)](https://www.npmjs.com/package/koa-router)
 [![sequelize](https://img.shields.io/badge/sequelize-%5E5.6.1-brightgreen.svg)](https://www.npmjs.com/package/sequelize)
 [![mysql2](https://img.shields.io/badge/mysql2-%5E1.6.5-brightgreen.svg)](https://www.npmjs.com/package/mysql2)
 
-</div>
 Node.js Koa2 实战开发微信小程序服务端API接口。
 
 ## 数据库
@@ -37,7 +34,7 @@ $ npm run dev
 # 打开浏览器输入回车：http://localhost:3000
 ```
 
-## 项目技术栈
+## 项目亮点
 Koa服务端编程、异步编程、面向对象编程。
 
 - Koa 与 Koa 二次开发API 
@@ -57,4 +54,5 @@ Koa服务端编程、异步编程、面向对象编程。
 - [x] [正在开发中，敬请期待..](###)
 
 ## 项目来源与正版教程
-[慕课网7七月老师：纯正商业级应用－Node.js Koa2开发微信小程序服务端](https://s.imooc.com/SHHXs2R)
+- 请支持正版教程：[《纯正商业级应用－Node.js Koa2开发微信小程序服务端》](https://s.imooc.com/SHHXs2R), by 慕课网：7七月老师
+
