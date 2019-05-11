@@ -20,19 +20,23 @@ class RegisterValidator extends LinValidator {
     constructor() {
         super();
         this.email = [
-            new Rule('isEmail', '不符合Email规范')
+            new Rule('isEmail', '电子邮箱不符合规范，请输入正确的邮箱')
         ]
         this.password1 = [
             // 用户密码指定范围
-            new Rule('isLength', '密码至少6个字符，最多32个字符', {
+            new Rule('isLength', '密码至少6个字符，最多22个字符', {
                 min: 6,
-                max: 32
+                max: 22
             }),
-            new Rule('matches', '密码必须包含字母，数字或者$符合组合', '^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]')
+            new Rule(
+                'matches',
+                '密码长度必须在6~22位之间，包含字符、数字和 _ ',
+                /^[A-Za-z0-9_*&$#@]{6,22}$/
+            )
         ]
         this.password2 = this.password1
         this.nickname = [
-            new Rule('isLength', '昵称至少4个字符，最多32个字符', {
+            new Rule('isLength', '昵称长度必须在4~32之间', {
                 min: 4,
                 max: 32
             }),
@@ -43,7 +47,7 @@ class RegisterValidator extends LinValidator {
         const psw1 = vals.body.password1
         const psw2 = vals.body.password2
         if (psw1 !== psw2) {
-            throw new Error('两个密码必须相同')
+            throw new Error('两次输入的密码不一致，请重新输入')
         }
     }
 
@@ -55,7 +59,7 @@ class RegisterValidator extends LinValidator {
             }
         })
         if (user) {
-            throw new Error('email已存在')
+            throw new Error('邮箱已被注册，请重新输入邮箱')
         }
     }
 }

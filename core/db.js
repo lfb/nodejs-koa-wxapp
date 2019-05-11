@@ -15,8 +15,7 @@ const sequelize = new Sequelize(dbName, user, password, {
     logging: true,
     timezone: '+08:00',
     define: {
-        // create_time
-        // update_time
+        // create_time && update_time
         timestamps: true,
         // delete_time
         paranoid: true,

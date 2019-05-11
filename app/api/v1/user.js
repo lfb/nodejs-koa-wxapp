@@ -19,7 +19,6 @@ router.post('/register', async (ctx) => {
 
     const r = await User.create(user)
 
-    // 操作成功返回结果
     success('注册成功')
 })
 

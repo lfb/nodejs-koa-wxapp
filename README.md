@@ -46,11 +46,12 @@ Koa服务端编程、异步编程、面向对象编程。
 - Sequelize ORM 管理 MySQL
 - JWT 权限控制中间件 
 - Validator 与 LinValidator 验证器
-- [更多介绍..](./doc/Koa项目基础.md)
+- [更多介绍..](./doc/project.md)
 
 
 ## 接口v1
 
+- [X] [用户接口](./doc/user.md)
 - [x] [正在开发中，敬请期待..](###)
 
 ## 项目来源与正版教程
