@@ -5,17 +5,6 @@ const {
 
 const {User} = require('../models/user')
 
-const {LoginType} = require('../lib/enum')
-
-class PositiveIntegerValidator extends LinValidator {
-    constructor() {
-        super()
-        this.id = [
-            new Rule('isInt', '需要正整数', {min: 1})
-        ]
-    }
-}
-
 class RegisterValidator extends LinValidator {
     constructor() {
         super();
@@ -31,7 +20,7 @@ class RegisterValidator extends LinValidator {
             new Rule(
                 'matches',
                 '密码长度必须在6~22位之间，包含字符、数字和 _ ',
-                /^[A-Za-z0-9_*&$#@]{6,22}$/
+                '^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]'
             )
         ]
         this.password2 = this.password1
@@ -64,38 +53,7 @@ class RegisterValidator extends LinValidator {
     }
 }
 
-class TokenValidator extends LinValidator {
-    constructor() {
-        super()
-        this.account = [
-            new Rule('isLength', '不符合账号规则', {
-                min: 4,
-                max: 32
-            })
-        ]
-        this.secret = [
-            new Rule('isOptional'),
-            new Rule('isLength', '最少6个字符', {
-                min: 6,
-                max: 128
-            })
-        ]
-    }
-
-    validateLoginType(vals) {
-        if (!vals.body.type) {
-            throw new Error('type是必须参数')
-        }
-
-        if (!LoginType.isThisType(vals.body.type)) {
-            throw new Error('type参数不合法')
-        }
-
-    }
-}
 
 module.exports = {
-    PositiveIntegerValidator,
-    RegisterValidator,
-    TokenValidator
+    RegisterValidator
 }

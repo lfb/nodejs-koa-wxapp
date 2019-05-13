@@ -1,5 +1,5 @@
 const Router = require('koa-router')
-const {TokenValidator} = require('../../validators/validator')
+const {TokenValidator} = require('../../validators/token')
 
 const router = new Router({
     prefix: '/v1/token'
