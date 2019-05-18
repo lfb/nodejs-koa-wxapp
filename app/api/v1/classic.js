@@ -4,6 +4,8 @@ const router = new Router({
 })
 
 const {Auth} = require('../../../middlewares/auth')
+const {Movie, Music, Sentence} = require('../../models/classic')
+
 
 const {PositiveIntegerValidator} = require('../../validators/classic')
 
