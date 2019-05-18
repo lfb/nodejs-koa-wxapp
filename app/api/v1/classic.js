@@ -1,18 +1,18 @@
 const Router = require('koa-router')
-const router = new Router()
+const router = new Router({
+    prefix: "/v1/classic"
+})
 
-const {ParameterException} = require('../../../core/http-exception')
+const {Auth} = require('../../../middlewares/auth')
+
 const {PositiveIntegerValidator} = require('../../validators/classic')
 
-router.post('/v1/:id/classic/latest', async (ctx, next) => {
-
-    const v = await new PositiveIntegerValidator().validate(ctx)
-    const id = v.get('path.id', parsed = false)
-
+router.get('/latest', new Auth().m, async (ctx, next) => {
     ctx.body = {
-        id
+        uid: ctx.auth.uid
     }
-
+    // 权限分级
+    //
 })
 
 module.exports = router
