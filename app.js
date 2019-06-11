@@ -1,3 +1,5 @@
+require('module-alias/register')
+
 const Koa = require('koa')
 const InitManager = require('./core/init')
 const parser = require('koa-bodyparser')

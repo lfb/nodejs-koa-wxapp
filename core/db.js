@@ -19,21 +19,28 @@ const sequelize = new Sequelize(dbName, user, password, {
         timestamps: true,
         // delete_time
         paranoid: true,
-        createdAt: 'create_at',
-        updatedAt: 'update_at',
-        deletedAt: 'delete_at',
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
+        deletedAt: 'deleted_at',
         // 把驼峰命名转换为下划线
-        underscored: true
+        underscored: true,
+        freezeTableName: true,
+        scopes: {
+            bh: {
+                attributes: {
+                    exclude: ['updated_at', 'deleted_at', 'created_at']
+                }
+            }
+        }
     }
 })
 
+
 // 创建模型
 sequelize.sync({
-    force: true
+    force: false
 })
 
 module.exports = {
     sequelize
 }
-
-// 数据迁移 SQL 更新
